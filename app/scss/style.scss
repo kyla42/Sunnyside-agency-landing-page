@@ -6,7 +6,7 @@
     .container {
         position: relative;
         height: 80rem;
-        background: url(/images/desktop/image-header.jpg), no-repeat;
+        background: url(./images/desktop/image-header.jpg), no-repeat;
         background-position: bottom;
         background-size: cover;
 
@@ -15,7 +15,7 @@
         }
 
         @include u.media-bp(sm) {
-            background-image: url(/images/mobile/image-header.jpg);
+            background-image: url(./images/mobile/image-header.jpg);
         }
 
 
