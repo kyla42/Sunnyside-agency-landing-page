@@ -1,0 +1,120 @@
+@use "utility" as u;
+
+$SoftRed: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$DarkDesaturatedCyan: hsl(167, 40%, 24%);
+$DarkBlue: hsl(198, 62%, 26%);
+$DarkModerateCyan: hsl(168, 34%, 41%);
+$VeryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+$VeryDarkGrayishBlue: hsl(213, 9%, 39%);
+$DarkGrayishBlue: hsl(232, 10%, 55%);
+$GrayishBlue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+$fontBorlow: 'Barlow',
+    sans-serif;
+$fontFraunces: 'Fraunces',
+    serif;
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 200rem;
+    background-color: whitesmoke;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $fontFraunces;
+    font-weight: 900;
+}
+
+h1 {
+    padding-top: 6.8rem;
+    color: $White;
+    font-size: 5.6rem;
+    letter-spacing: 0.9rem;
+    transform: scaleY(0.98);
+    text-align: center;
+
+    @include u.media-bp(md) {
+        padding: 5.6rem 2rem 0 2rem;
+        letter-spacing: 0.6rem;
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    color: $VeryDarkDesaturatedBlue;
+    font-size: 4rem;
+    padding-bottom: 3.7rem;
+    letter-spacing: -0.02rem;
+
+    @include u.media-bp(md) {
+        font-size: 3.2rem;
+    }
+}
+
+h3 {
+    font-size: 2.8rem;
+    padding-bottom: 3.4rem;
+}
+
+h4 {
+    color: $GrayishBlue;
+    font-size: 2rem;
+    letter-spacing: 0.51rem;
+    padding-bottom: 8rem;
+    text-align: center;
+
+    @include u.media-bp(md) {
+        font-size: 1.6rem;
+        letter-spacing: 0.4rem;
+        padding-bottom: 6rem;
+    }
+}
+
+p {
+    font-family: $fontBorlow;
+    font-weight: 600;
+    line-height: 1.56;
+    transform: scaleY(1.08);
+}
+
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+
+    @include u.media-bp(sm) {
+        width: 37.5rem;
+    }
+}
+
+.btn {
+    height: 5.3rem;
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+}

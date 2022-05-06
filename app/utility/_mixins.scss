@@ -1,0 +1,20 @@
+// sm <600px, md <900px, max <=1440px 
+$breakpoint: ("sm": "(max-width: 37.4375em)",
+  "md": "(max-width: 63.9375em)",
+  "max": "(max-width: 90em)");
+
+@mixin media-bp($size) {
+  @media #{map-get($breakpoint, $size)} {
+    @content;
+  }
+}
+
+// $breakpoint-range: ("sm": "(min-width: 0em) and (max-width: 37.4375em)",
+//   "md": "(min-width: 37.5em) and (max-width: 63.9375em)",
+//   "max": "(min-width: 64em) and (max-width:90em)");
+
+// @mixin media-range($size) {
+//   @media #{map-get($breakpoint-range, $size)} {
+//     @content;
+//   }
+// }
