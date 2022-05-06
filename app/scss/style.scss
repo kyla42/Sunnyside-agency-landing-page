@@ -6,7 +6,7 @@
     .container {
         position: relative;
         height: 80rem;
-        background: url(./images/desktop/image-header.jpg), no-repeat;
+        background: url(../images/desktop/image-header.jpg), no-repeat;
         background-position: bottom;
         background-size: cover;
 
@@ -15,7 +15,7 @@
         }
 
         @include u.media-bp(sm) {
-            background-image: url(./images/mobile/image-header.jpg);
+            background-image: url(../images/mobile/image-header.jpg);
         }
 
 
@@ -300,20 +300,20 @@
         }
 
         .img1 {
-            background-image: url(/images/desktop/image-transform.jpg);
+            background-image: url(../images/desktop/image-transform.jpg);
             grid-area: img1;
 
             @include u.media-bp(md) {
-                background-image: url(/images/mobile/image-transform.jpg);
+                background-image: url(../images/mobile/image-transform.jpg);
             }
         }
 
         .img2 {
-            background-image: url(/images/desktop/image-stand-out.jpg);
+            background-image: url(../images/desktop/image-stand-out.jpg);
             grid-area: img2;
 
             @include u.media-bp(md) {
-                background-image: url(/images/mobile/image-stand-out.jpg);
+                background-image: url(../images/mobile/image-stand-out.jpg);
             }
         }
 
@@ -342,22 +342,22 @@
         }
 
         .mix1 {
-            background-image: url(/images/desktop/image-graphic-design.jpg);
+            background-image: url(../images/desktop/image-graphic-design.jpg);
             color: g.$DarkDesaturatedCyan;
             grid-area: mix1;
 
             @include u.media-bp(md) {
-                background-image: url(/images/mobile/image-graphic-design.jpg);
+                background-image: url(../images/mobile/image-graphic-design.jpg);
             }
         }
 
         .mix2 {
-            background-image: url(/images/desktop/image-photography.jpg);
+            background-image: url(../images/desktop/image-photography.jpg);
             color: g.$DarkBlue;
             grid-area: mix2;
 
             @include u.media-bp(md) {
-                background-image: url(/images/mobile/image-photography.jpg);
+                background-image: url(../images/mobile/image-photography.jpg);
             }
         }
     }
@@ -458,38 +458,38 @@
         }
 
         .gal1 {
-            background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+            background-image: url(../images/desktop/image-gallery-milkbottles.jpg);
             // grid-area: g1;
 
             @include u.media-bp(sm) {
-                background-image: url(/images/mobile/image-gallery-milkbottles.jpg);
+                background-image: url(../images/mobile/image-gallery-milkbottles.jpg);
             }
         }
 
         .gal2 {
-            background-image: url(/images/desktop/image-gallery-orange.jpg);
+            background-image: url(../images/desktop/image-gallery-orange.jpg);
             // grid-area: g2;
 
             @include u.media-bp(sm) {
-                background-image: url(/images/mobile/image-gallery-orange.jpg);
+                background-image: url(../images/mobile/image-gallery-orange.jpg);
             }
         }
 
         .gal3 {
-            background-image: url(/images/desktop/image-gallery-cone.jpg);
+            background-image: url(../images/desktop/image-gallery-cone.jpg);
             // grid-area: g3;
 
             @include u.media-bp(sm) {
-                background-image: url(/images/mobile/image-gallery-cone.jpg);
+                background-image: url(../images/mobile/image-gallery-cone.jpg);
             }
         }
 
         .gal4 {
-            background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+            background-image: url(../images/desktop/image-gallery-sugarcubes.jpg);
             // grid-area: g4;
 
             @include u.media-bp(sm) {
-                background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+                background-image: url(../images/mobile/image-gallery-sugar-cubes.jpg);
             }
         }
     }
