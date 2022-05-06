@@ -44,8 +44,10 @@
             }
 
             &__hb-btn {
+                width: 4rem;
                 display: none;
                 flex-direction: column;
+                align-items: center;
                 background-color: transparent;
                 border: none;
                 cursor: pointer;
@@ -116,9 +118,9 @@
 
     .menu {
         position: absolute;
-        width: 89%;
+        width: 88%;
         height: auto;
-        top: 13%;
+        top: 15%;
         left: 5%;
         padding: 2rem 0;
         background-color: g.$White;
@@ -165,7 +167,7 @@
 
         @include u.media-bp(sm) {
             width: 32rem;
-            top: 20%;
+            top: 18%;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -175,7 +177,6 @@
         display: flex;
     }
 }
-
 
 
 // feature
